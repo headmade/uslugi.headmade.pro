@@ -1611,6 +1611,54 @@ label {
     .btn.transparent:hover {
       color: white; }
 
+.wrapper-how {
+  background-color: #e6f4fc;
+  padding-bottom: 20px; }
+
+.how {
+  text-align: center; }
+  .how .how__caption {
+    display: block;
+    margin: 50px 0;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #333333;
+    line-height: 1.2;
+    font-style: normal; }
+  .how .how__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    text-align: center;
+    margin-bottom: 30px; }
+    .how .how__list .how__list-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 159px; }
+      .how .how__list .how__list-item .how__img-wrapper img {
+        max-width: 123px;
+        max-height: 70px;
+        margin: 0 auto 30px;
+        display: block; }
+    .how .how__list .how__list-item-text {
+      font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 1.125rem;
+      color: #333333;
+      line-height: 1.2;
+      font-style: normal; }
+  .how .how__under-btn {
+    margin-top: 35px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.1875rem;
+    color: #333333;
+    line-height: 1.2;
+    font-style: normal; }
+
 .wrapper-info {
   margin-top: 4.0625rem; }
 
