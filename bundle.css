@@ -1611,9 +1611,40 @@ label {
     .btn.transparent:hover {
       color: white; }
 
+.wrapper-footer {
+  padding-bottom: 50px;
+  position: relative; }
+
+.footer {
+  text-align: center; }
+  .footer .footer__caption {
+    display: block;
+    margin: 50px 0 15px 0;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #333333;
+    line-height: 1.2;
+    font-style: normal; }
+  .footer .footer__text {
+    max-width: 400px;
+    margin: 0 auto 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 0.9375rem;
+    color: #555555;
+    line-height: 1.2;
+    font-style: normal; }
+  .footer .footer__cat {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 70px;
+    margin-right: 0; }
+
 .wrapper-how {
   background-color: #e6f4fc;
-  padding-bottom: 20px; }
+  padding-bottom: 50px; }
 
 .how {
   text-align: center; }
@@ -1652,6 +1683,7 @@ label {
       font-style: normal; }
   .how .how__under-btn {
     margin-top: 35px;
+    margin-bottom: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-size: 1.1875rem;
