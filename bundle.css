@@ -1561,6 +1561,161 @@ label {
   html {
     font-size: 13px; } }
 
+.btn {
+  vertical-align: top;
+  display: inline-block;
+  min-width: 250px;
+  text-align: center;
+  padding: 13px 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.2;
+  font-style: normal;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.4s ease; }
+  .btn.accent {
+    background-color: #e90e3f;
+    color: white; }
+    .btn.accent:hover {
+      background-color: #a30a2c; }
+  .btn.transparent {
+    padding: 9px 11px;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 5px; }
+    .btn.transparent.btn-segment-color1 {
+      color: #28a9b1; }
+      .btn.transparent.btn-segment-color1:hover {
+        background-color: #28a9b1; }
+    .btn.transparent.btn-segment-color2 {
+      color: #b40037; }
+      .btn.transparent.btn-segment-color2:hover {
+        background-color: #b40037; }
+    .btn.transparent.btn-segment-color3 {
+      color: #004da6; }
+      .btn.transparent.btn-segment-color3:hover {
+        background-color: #004da6; }
+    .btn.transparent.btn-segment-color4 {
+      color: #119142; }
+      .btn.transparent.btn-segment-color4:hover {
+        background-color: #119142; }
+    .btn.transparent.btn-segment-color5 {
+      color: #75136e; }
+      .btn.transparent.btn-segment-color5:hover {
+        background-color: #75136e; }
+    .btn.transparent:hover {
+      color: white; }
+
+.wrapper-info {
+  margin-top: 4.0625rem; }
+
+.info {
+  margin-bottom: 50px;
+  text-align: center; }
+  .info .info__caption {
+    display: block;
+    text-align: center;
+    margin: 50px 0;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #333333;
+    line-height: 1.2;
+    font-style: normal; }
+
+.info__segment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-align: left; }
+  .info__segment:nth-child(odd) {
+    flex-direction: row-reverse; }
+
+.info__segment-wrapper-img {
+  max-width: 270px;
+  margin-right: 50px; }
+  .info__segment-wrapper-img img {
+    display: block;
+    width: 100%;
+    height: auto; }
+
+.info__segment-text {
+  max-width: 400px;
+  padding: 20px; }
+  .info__segment-text .info-segment-title {
+    margin-bottom: 20px;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.375rem;
+    color: #333333;
+    line-height: 1.2;
+    font-style: normal; }
+  .info__segment-text .info__segment-list .info__segment-list-item {
+    margin-bottom: 15px; }
+    .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link {
+      display: block;
+      margin-bottom: 10px;
+      font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #000000;
+      line-height: 1.2;
+      font-style: normal;
+      text-decoration: underline;
+      transition: all 0.4s ease; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link:hover {
+        text-decoration: none; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg {
+        height: 10px;
+        width: 10px;
+        margin-right: 15px; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color1 {
+        fill: #28a9b1; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color2 {
+        fill: #b40037; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color3 {
+        fill: #004da6; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color4 {
+        fill: #119142; }
+      .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color5 {
+        fill: #75136e; }
+    .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color1 {
+      color: #28a9b1; }
+    .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color2 {
+      color: #b40037; }
+    .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color3 {
+      color: #004da6; }
+    .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color4 {
+      color: #119142; }
+    .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color5 {
+      color: #75136e; }
+    .info__segment-text .info__segment-list .info__segment-list-item p {
+      padding-left: 25px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: normal;
+      font-size: 1rem;
+      color: #555555;
+      line-height: 1.2;
+      font-style: normal; }
+      .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale {
+        font-size: 20px; }
+      .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color1 {
+        color: #28a9b1; }
+      .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color2 {
+        color: #b40037; }
+      .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color3 {
+        color: #004da6; }
+      .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color4 {
+        color: #119142; }
+      .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color5 {
+        color: #75136e; }
+
 .wrapper-nav {
   background: #004da6;
   position: fixed;
@@ -1577,7 +1732,7 @@ label {
     padding: 20px;
     font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.375rem;
+    font-size: 1.25rem;
     color: white;
     line-height: 1.2;
     font-style: normal;
