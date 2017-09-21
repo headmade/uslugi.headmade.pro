@@ -1509,7 +1509,7 @@ ul.no-bullet, ol.no-bullet {
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: url(source/fonts/HelveticaNeueBold.ttf) format("truetype");
+    font-family-src: url(source/fonts/HelveticaNeueBold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -1521,13 +1521,13 @@ ul.no-bullet, ol.no-bullet {
 
 @font-face {
   font-family: "Ekibastuz";
-  src: url(source/fonts/Ekibastuz-Bold.otf);
+  src: url(source/fonts/als_ekibastuz_bold.woff2) format("woff2");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: "Ekibastuz";
-  src: url(source/fonts/Ekibastuz-Light.otf);
+  src: url(source/fonts/als_ekibastuz_light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal; }
 
@@ -1641,6 +1641,13 @@ label {
     bottom: 0;
     right: 70px;
     margin-right: 0; }
+    @media (max-width: 992px) {
+      .footer .footer__cat {
+        position: relative;
+        bottom: 0;
+        right: -30px;
+        display: block;
+        margin: 35px auto -50px; } }
 
 .wrapper-how {
   background-color: #e6f4fc;
@@ -1716,10 +1723,18 @@ label {
   text-align: left; }
   .info__segment:nth-child(odd) {
     flex-direction: row-reverse; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .info__segment {
+      flex-direction: column; }
+      .info__segment:nth-child(odd) {
+        flex-direction: column; } }
 
 .info__segment-wrapper-img {
   max-width: 270px;
   margin-right: 50px; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .info__segment-wrapper-img {
+      margin-right: 0; } }
   .info__segment-wrapper-img img {
     display: block;
     width: 100%;

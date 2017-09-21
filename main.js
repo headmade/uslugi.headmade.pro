@@ -73,6 +73,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_general_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_general_scss__);
 
 
+let anchor = document.querySelector('.under__up');
+anchor.addEventListener('click', function () {
+  window.scroll(0,-100);
+});
+
+
 
 /***/ }),
 /* 1 */
