@@ -1611,6 +1611,51 @@ label {
     .btn.transparent:hover {
       color: white; }
 
+.banner__annotation {
+  position: absolute;
+  z-index: 1;
+  width: 27%;
+  top: calc(40vw - 340px);
+  left: 32px;
+  max-width: 250px; }
+  .banner__annotation .banner-logo {
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.1875rem;
+    color: #004da6;
+    line-height: 1.2;
+    font-style: normal;
+    margin-bottom: 5px; }
+    .banner__annotation .banner-logo span {
+      color: #e90e3f; }
+  .banner__annotation .banner-text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #777777;
+    line-height: 1.2;
+    font-style: normal;
+    margin-bottom: 20px; }
+  .banner__annotation .banner__sale {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+    .banner__annotation .banner__sale img {
+      max-width: 55px;
+      height: auto;
+      display: block;
+      margin-right: 10px; }
+    .banner__annotation .banner__sale .banner__text-sale {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #777777;
+      line-height: 1.2;
+      font-style: normal; }
+      .banner__annotation .banner__sale .banner__text-sale span {
+        display: block;
+        color: #004da6; }
+
 .wrapper-footer {
   padding-bottom: 50px;
   position: relative; }
@@ -1813,9 +1858,11 @@ label {
 
 .wrapper-nav {
   background: #004da6;
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%; }
+  .wrapper-nav.fixed {
+    position: fixed; }
 
 .nav__list {
   position: relative;

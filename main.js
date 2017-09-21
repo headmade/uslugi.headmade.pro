@@ -78,6 +78,16 @@ anchor.addEventListener('click', function () {
   window.scroll(0,-100);
 });
 
+window.onscroll = function() {
+  let banner = document.querySelector('.banner');
+  let nav = document.querySelector('.wrapper-nav');
+  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  if(banner.clientHeight < scrolled){
+    nav.classList.add("fixed")
+  }else{
+    nav.classList.remove("fixed")
+  }
+};
 
 
 /***/ }),
