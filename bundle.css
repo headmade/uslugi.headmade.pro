@@ -1611,6 +1611,87 @@ label {
     .btn.transparent:hover {
       color: white; }
 
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  text-indent: -9999px;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s; }
+  @media (min-width: 992px) {
+    .c-hamburger {
+      display: none; } }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 13px;
+  border-radius: 4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #0173c1; }
+
+.hamburger-wrapper {
+  position: absolute;
+  right: 15px;
+  top: 0;
+  margin-top: 10px; }
+
+.c-hamburger span::before, .c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  border-radius: 4px;
+  width: 100%;
+  height: 4px;
+  background-color: #0173c1;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -8px; }
+
+.c-hamburger span::after {
+  top: 8px; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  transition-property: bottom, transform; }
+
+/* состояние active при открытом меню  */
+.c-hamburger--htx.active span {
+  background: none; }
+
+.c-hamburger--htx.active span::before {
+  top: 0;
+  transform: rotate(45deg); }
+
+.c-hamburger--htx.active span::after {
+  top: 0;
+  transform: rotate(-45deg); }
+
+.c-hamburger--htx.active span::before,
+.c-hamburger--htx.active span::after {
+  transition-delay: 0s, 0.3s; }
+
 .banner__annotation {
   position: absolute;
   z-index: 1;
@@ -1618,6 +1699,12 @@ label {
   top: calc(40vw - 340px);
   left: 32px;
   max-width: 250px; }
+  @media (max-width: 992px) {
+    .banner__annotation {
+      position: fixed;
+      left: 20px;
+      top: 10px;
+      width: 70%; } }
   .banner__annotation .banner-logo {
     font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -1636,25 +1723,13 @@ label {
     line-height: 1.2;
     font-style: normal;
     margin-bottom: 20px; }
-  .banner__annotation .banner__sale {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px; }
-    .banner__annotation .banner__sale img {
-      max-width: 55px;
-      height: auto;
-      display: block;
-      margin-right: 10px; }
-    .banner__annotation .banner__sale .banner__text-sale {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      font-size: 1rem;
-      color: #777777;
-      line-height: 1.2;
-      font-style: normal; }
-      .banner__annotation .banner__sale .banner__text-sale span {
-        display: block;
-        color: #004da6; }
+    @media (max-width: 992px) {
+      .banner__annotation .banner-text {
+        display: none; } }
+
+@media (max-width: 992px) {
+  .banner__core {
+    margin-top: 50px; } }
 
 .wrapper-footer {
   padding-bottom: 50px;
@@ -1745,6 +1820,9 @@ label {
 
 .wrapper-info {
   margin-top: 4.0625rem; }
+  @media (max-width: 992px) {
+    .wrapper-info {
+      margin-top: 0; } }
 
 .info {
   margin-bottom: 50px;
@@ -1861,6 +1939,9 @@ label {
   position: relative;
   top: 0;
   width: 100%; }
+  @media (max-width: 992px) {
+    .wrapper-nav {
+      display: none; } }
   .wrapper-nav.fixed {
     position: fixed; }
 
@@ -1880,6 +1961,43 @@ label {
     font-style: normal;
     transition: all 0.4s ease; }
     .nav__list .nav__list-item a:hover {
+      opacity: 0.7; }
+
+.wrapper-nav-sticky {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #555555;
+  display: none; }
+  @media (max-width: 992px) {
+    .wrapper-nav-sticky {
+      display: block; } }
+
+.nav-sticky .nav__list {
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #555555;
+  width: 100%;
+  left: 0;
+  top: 50px;
+  background: white;
+  display: none; }
+  .nav-sticky .nav__list.active {
+    display: flex; }
+  .nav-sticky .nav__list .nav__list-item a {
+    display: block;
+    padding: 20px;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #555555;
+    line-height: 1.2;
+    font-style: normal;
+    transition: all 0.4s ease; }
+    .nav-sticky .nav__list .nav__list-item a:hover {
       opacity: 0.7; }
 
 .wrapper-under {

@@ -71,6 +71,9 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_general_scss__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_general_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_general_scss__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_hamburger__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_hamburger___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_hamburger__);
+
 
 
 let anchor = document.querySelector('.under__up');
@@ -90,11 +93,26 @@ window.onscroll = function() {
 };
 
 
+
+
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// var hamburger = document.querySelector('.c-hamburger');
+// var navList = document.querySelector('.nav-sticky .nav__list');
+//
+// hamburger.addEventListener('click', function() {
+//   this.classList.toggle('active');
+//   navList.classList.toggle('active');
+// });
+
 
 /***/ })
 /******/ ]);
