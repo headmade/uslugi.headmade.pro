@@ -73,24 +73,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_general_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_general_scss__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_hamburger__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_hamburger___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_hamburger__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_sticky_nav__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_sticky_nav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_sticky_nav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_button_up__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_button_up___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__js_button_up__);
 
 
-
-let anchor = document.querySelector('.under__up');
-anchor.addEventListener('click', function () {
-  window.scroll(0,-100);
-});
-
-window.onscroll = function() {
-  let banner = document.querySelector('.banner');
-  let nav = document.querySelector('.wrapper-nav');
-  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  if(banner.clientHeight < scrolled){
-    nav.classList.add("fixed")
-  }else{
-    nav.classList.remove("fixed")
-  }
-};
 
 
 
@@ -105,13 +93,39 @@ window.onscroll = function() {
 /* 2 */
 /***/ (function(module, exports) {
 
-// var hamburger = document.querySelector('.c-hamburger');
-// var navList = document.querySelector('.nav-sticky .nav__list');
-//
-// hamburger.addEventListener('click', function() {
-//   this.classList.toggle('active');
-//   navList.classList.toggle('active');
-// });
+let hamburger = document.querySelector('.c-hamburger');
+let navList = document.querySelector('.nav-sticky .nav__list');
+
+hamburger.addEventListener('click', function() {
+  this.classList.toggle('active');
+  navList.classList.toggle('active');
+});
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+window.onscroll = function() {
+  let banner = document.querySelector('.banner');
+  let nav = document.querySelector('.wrapper-nav');
+  let scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  if(banner.clientHeight < scrolled){
+    nav.classList.add("fixed")
+  }else{
+    nav.classList.remove("fixed")
+  }
+};
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+let anchor = document.querySelector('.under__up');
+anchor.addEventListener('click', function () {
+  window.scroll(0,-100);
+});
 
 
 /***/ })
