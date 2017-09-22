@@ -2002,12 +2002,11 @@ label {
       opacity: 0.7; }
 
 .wrapper-under {
-  padding-bottom: 20px;
+  padding: 20px 0;
   text-align: center;
   position: relative; }
 
 .under .under__text {
-  margin: 15px 0 5px 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-size: 0.8125rem;
@@ -2015,20 +2014,23 @@ label {
   line-height: 1.2;
   font-style: normal; }
 
-.under .under__logo .banner-logo {
-  font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1.875rem;
-  color: #004da6;
-  line-height: 1.2;
-  font-style: normal; }
-  .under .under__logo .banner-logo span {
-    color: #e90e3f; }
+.under .under__logo {
+  margin-bottom: 10px;
+  display: block; }
+  .under .under__logo .banner-logo {
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #004da6;
+    line-height: 1.2;
+    font-style: normal; }
+    .under .under__logo .banner-logo span {
+      color: #e90e3f; }
 
 .under .under__up {
   position: absolute;
   right: 43px;
-  top: 32px;
+  top: 20px;
   cursor: pointer; }
 
 .wrapper-cross-browser {
