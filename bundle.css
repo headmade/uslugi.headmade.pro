@@ -1865,7 +1865,7 @@ label {
     height: auto; }
 
 .info__segment-text {
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px; }
   .info__segment-text .info-segment-title {
     margin-bottom: 20px;
