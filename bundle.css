@@ -1695,10 +1695,10 @@ label {
 .banner__annotation {
   position: absolute;
   z-index: 1;
-  width: 27%;
+  width: 30%;
   top: calc(40vw - 340px);
   left: 32px;
-  max-width: 250px; }
+  max-width: 400px; }
   @media (max-width: 992px) {
     .banner__annotation {
       position: fixed;

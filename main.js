@@ -93,13 +93,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 2 */
 /***/ (function(module, exports) {
 
-let hamburger = document.querySelector('.c-hamburger');
-let navList = document.querySelector('.nav-sticky .nav__list');
+document.addEventListener('DOMContentLoaded', function(){
+  let hamburger = document.querySelector('.c-hamburger');
+  let navList = document.querySelector('.nav-sticky .nav__list');
 
-hamburger.addEventListener('click', function() {
-  this.classList.toggle('active');
-  navList.classList.toggle('active');
-});
+  hamburger.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navList.classList.toggle('active');
+  });
+})
 
 
 /***/ }),
@@ -122,10 +124,12 @@ window.onscroll = function() {
 /* 4 */
 /***/ (function(module, exports) {
 
-let anchor = document.querySelector('.under__up');
-anchor.addEventListener('click', function () {
-  window.scroll(0,-100);
-});
+document.addEventListener('DOMContentLoaded', function(){
+  let anchor = document.querySelector('.under__up');
+  anchor.addEventListener('click', function () {
+    window.scroll(0,-100);
+  });
+})
 
 
 /***/ })
