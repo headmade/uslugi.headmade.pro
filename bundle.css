@@ -1789,7 +1789,7 @@ label {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: flex-end;
+    align-items: flex-start;
     text-align: center;
     margin-bottom: 30px; }
     .how .how__list .how__list-item {
