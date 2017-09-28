@@ -1693,10 +1693,10 @@ label {
   transition-delay: 0s, 0.3s; }
 
 .banner__annotation {
-  position: absolute;
+  position: relative;
   z-index: 1;
   width: 100%;
-  top: 0;
+  bottom: 0;
   left: 0;
   display: flex;
   align-items: center;
@@ -1707,6 +1707,7 @@ label {
       position: fixed;
       left: 20px;
       top: 10px;
+      bottom: auto;
       width: 70%;
       padding: 0; } }
   .banner__annotation .banner-logo {
@@ -1720,6 +1721,7 @@ label {
     display: flex; }
     .banner__annotation .banner-logo span {
       margin-left: 5px;
+      text-transform: uppercase;
       color: #e90e3f; }
   .banner__annotation .banner-text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
