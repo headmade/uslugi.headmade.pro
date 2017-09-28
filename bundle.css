@@ -1593,9 +1593,9 @@ label {
       .btn.transparent.btn-segment-color1:hover {
         background-color: #28a9b1; }
     .btn.transparent.btn-segment-color2 {
-      color: #b40037; }
+      color: #75136e; }
       .btn.transparent.btn-segment-color2:hover {
-        background-color: #b40037; }
+        background-color: #75136e; }
     .btn.transparent.btn-segment-color3 {
       color: #004da6; }
       .btn.transparent.btn-segment-color3:hover {
@@ -1605,9 +1605,9 @@ label {
       .btn.transparent.btn-segment-color4:hover {
         background-color: #119142; }
     .btn.transparent.btn-segment-color5 {
-      color: #75136e; }
+      color: #b40037; }
       .btn.transparent.btn-segment-color5:hover {
-        background-color: #75136e; }
+        background-color: #b40037; }
     .btn.transparent:hover {
       color: white; }
 
@@ -1695,16 +1695,20 @@ label {
 .banner__annotation {
   position: absolute;
   z-index: 1;
-  width: 30%;
-  top: calc(40vw - 340px);
-  left: 32px;
-  max-width: 400px; }
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: white; }
   @media (max-width: 992px) {
     .banner__annotation {
       position: fixed;
       left: 20px;
       top: 10px;
-      width: 70%; } }
+      width: 70%;
+      padding: 0; } }
   .banner__annotation .banner-logo {
     font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -1712,8 +1716,10 @@ label {
     color: #004da6;
     line-height: 1.2;
     font-style: normal;
-    margin-bottom: 5px; }
+    margin-right: 20px;
+    display: flex; }
     .banner__annotation .banner-logo span {
+      margin-left: 5px;
       color: #e90e3f; }
   .banner__annotation .banner-text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1722,14 +1728,17 @@ label {
     color: #777777;
     line-height: 1.2;
     font-style: normal;
-    margin-bottom: 20px; }
+    max-width: 900px;
+    margin-bottom: 0; }
     @media (max-width: 992px) {
       .banner__annotation .banner-text {
         display: none; } }
 
-@media (max-width: 992px) {
-  .banner__core {
-    margin-top: 50px; } }
+.banner__core {
+  text-align: center; }
+  @media (max-width: 992px) {
+    .banner__core {
+      margin-top: 50px; } }
 
 .wrapper-footer {
   background-color: #e6f4fc;
@@ -1855,6 +1864,7 @@ label {
 
 .info__segment-wrapper-img {
   max-width: 270px;
+  width: 100%;
   margin-right: 50px; }
   @media (min-width: 0) and (max-width: 767px) {
     .info__segment-wrapper-img {
@@ -1897,23 +1907,23 @@ label {
       .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color1 {
         fill: #28a9b1; }
       .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color2 {
-        fill: #b40037; }
+        fill: #75136e; }
       .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color3 {
         fill: #004da6; }
       .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color4 {
         fill: #119142; }
       .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link .info__segment-list-item-svg_color5 {
-        fill: #75136e; }
+        fill: #b40037; }
     .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color1 {
       color: #28a9b1; }
     .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color2 {
-      color: #b40037; }
+      color: #75136e; }
     .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color3 {
       color: #004da6; }
     .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color4 {
       color: #119142; }
     .info__segment-text .info__segment-list .info__segment-list-item .info__segment-list-item-link-color5 {
-      color: #75136e; }
+      color: #b40037; }
     .info__segment-text .info__segment-list .info__segment-list-item p {
       padding-left: 25px;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1927,13 +1937,13 @@ label {
       .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color1 {
         color: #28a9b1; }
       .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color2 {
-        color: #b40037; }
+        color: #75136e; }
       .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color3 {
         color: #004da6; }
       .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color4 {
         color: #119142; }
       .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color5 {
-        color: #75136e; }
+        color: #b40037; }
 
 .wrapper-nav {
   background: #004da6;
