@@ -71,16 +71,19 @@
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_general_scss__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__style_general_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__style_general_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_hamburger__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_hamburger___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_hamburger__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_sticky_nav__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_sticky_nav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__js_sticky_nav__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_button_up__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_button_up___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__js_button_up__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_sticky_nav__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__js_sticky_nav___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__js_sticky_nav__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__js_button_up__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__js_hamburger__ = __webpack_require__(4);
 
 
 
 
+
+document.addEventListener('DOMContentLoaded', function(){
+  new __WEBPACK_IMPORTED_MODULE_2__js_button_up__["a" /* default */]('.under__up');
+  new __WEBPACK_IMPORTED_MODULE_3__js_hamburger__["a" /* default */]('.wrapper-nav-sticky')
+});
 
 
 /***/ }),
@@ -91,21 +94,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-document.addEventListener('DOMContentLoaded', function(){
-  let hamburger = document.querySelector('.c-hamburger');
-  let navList = document.querySelector('.nav-sticky .nav__list');
-
-  hamburger.addEventListener('click', function() {
-    this.classList.toggle('active');
-    navList.classList.toggle('active');
-  });
-})
-
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports) {
 
 window.onscroll = function() {
@@ -121,15 +109,49 @@ window.onscroll = function() {
 
 
 /***/ }),
-/* 4 */
-/***/ (function(module, exports) {
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-document.addEventListener('DOMContentLoaded', function(){
-  let anchor = document.querySelector('.under__up');
-  anchor.addEventListener('click', function () {
-    window.scroll(0,-100);
-  });
-})
+"use strict";
+  class ButtonUp {
+    constructor(param) {
+      let anchor = document.querySelector(param);
+      anchor.addEventListener('click', function () {
+        window.scroll(0, -100);
+      })
+    }
+  }
+/* harmony export (immutable) */ __webpack_exports__["a"] = ButtonUp;
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class Hamburger {
+  constructor(param){
+    let base = document.querySelector(param);
+    let hamburger = base.querySelector('.c-hamburger');
+    let navList = base.querySelector('.nav-sticky .nav__list');
+    let navListItems = base.querySelectorAll('.nav__list-item');
+
+    hamburger.addEventListener('click', function() {
+      this.classList.toggle('active');
+      navList.classList.toggle('active');
+    });
+
+    for (let i = 0; i < navListItems.length;  i++){
+      navListItems[i].addEventListener('click', function () {
+        hamburger.classList.toggle('active');
+        navList.classList.toggle('active');
+      })
+    }
+  }
+}
+/* harmony export (immutable) */ __webpack_exports__["a"] = Hamburger;
+
 
 
 /***/ })
