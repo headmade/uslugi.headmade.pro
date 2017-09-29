@@ -1692,6 +1692,9 @@ label {
 .c-hamburger--htx.active span::after {
   transition-delay: 0s, 0.3s; }
 
+.banner {
+  background-color: white; }
+
 .banner__annotation {
   position: relative;
   z-index: 1;
