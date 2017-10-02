@@ -1746,7 +1746,6 @@ label {
       margin-top: 50px; } }
 
 .wrapper-footer {
-  background-color: #e6f4fc;
   padding-bottom: 50px;
   position: relative; }
 
@@ -2019,7 +2018,8 @@ label {
 .wrapper-under {
   padding: 20px 0;
   text-align: center;
-  position: relative; }
+  position: relative;
+  background-color: #e6f4fc; }
 
 .under .under__text {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2076,3 +2076,65 @@ label {
     display: block;
     width: 100%;
     height: auto; }
+
+.wrapper-docs {
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #e6f4fc; }
+
+.docs .docs__caption {
+  display: block;
+  margin: 50px 0;
+  font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #333333;
+  line-height: 1.2;
+  font-style: normal; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .docs .docs__caption {
+      font-size: 2.5rem; } }
+
+.docs__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .docs__list .docs__list-item {
+    display: flex;
+    min-width: 320px;
+    margin-bottom: 20px;
+    margin-right: 20px; }
+    .docs__list .docs__list-item:last-child {
+      margin-right: 0; }
+    @media (min-width: 0) and (max-width: 767px) {
+      .docs__list .docs__list-item {
+        min-width: 275px; } }
+    .docs__list .docs__list-item .wrapper-list-item__img {
+      width: 2.8125rem;
+      min-width: 2.8125rem;
+      margin-right: 20px; }
+      .docs__list .docs__list-item .wrapper-list-item__img img {
+        display: block;
+        width: 100%;
+        height: auto; }
+    .docs__list .docs__list-item .wrapper-list-item__text {
+      text-align: left; }
+      .docs__list .docs__list-item .wrapper-list-item__text p {
+        display: block;
+        font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1.25rem;
+        color: #000000;
+        line-height: 1.2;
+        font-style: normal;
+        margin-bottom: 0; }
+      .docs__list .docs__list-item .wrapper-list-item__text a {
+        display: block;
+        font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1rem;
+        color: #004da6;
+        line-height: 1.2;
+        font-style: normal; }
+        .docs__list .docs__list-item .wrapper-list-item__text a:hover {
+          color: #003674; }
