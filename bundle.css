@@ -1739,11 +1739,23 @@ label {
       .banner__annotation .banner-text {
         display: none; } }
 
+.banner-text--in-small {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #777777;
+  line-height: 1.2;
+  font-style: normal;
+  max-width: 900px;
+  margin: 50px 0 0 0;
+  padding: 1.25rem;
+  display: none; }
+  @media (max-width: 992px) {
+    .banner-text--in-small {
+      display: inline-block; } }
+
 .banner__core {
   text-align: center; }
-  @media (max-width: 992px) {
-    .banner__core {
-      margin-top: 50px; } }
 
 .wrapper-footer {
   padding-bottom: 50px;
