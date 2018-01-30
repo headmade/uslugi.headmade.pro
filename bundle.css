@@ -1577,6 +1577,27 @@ label {
   border-radius: 6px;
   text-decoration: none;
   transition: all 0.4s ease; }
+  .btn.button-arrow-right {
+    padding: 13px 25px 13px 15px;
+    position: relative;
+    color: white;
+    background-color: #004da6; }
+    .btn.button-arrow-right:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      bottom: auto;
+      left: auto;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      border-bottom: 2px solid white;
+      border-right: 2px solid white;
+      border-radius: 2px;
+      transform: rotate(-45deg); }
+    .btn.button-arrow-right:hover {
+      background-color: #004595; }
   .btn.accent {
     background-color: #e90e3f;
     color: white; }
@@ -1692,6 +1713,152 @@ label {
 .c-hamburger--htx.active span::after {
   transition-delay: 0s, 0.3s; }
 
+.banner-logo {
+  display: inline-block;
+  margin: 0 !important;
+  text-decoration: none !important; }
+  .banner-logo .banner-logo__prefix {
+    display: flex;
+    margin: 0;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #004da6;
+    line-height: 1.2;
+    font-style: normal;
+    text-transform: uppercase; }
+    .banner-logo .banner-logo__prefix .banner-logo__suffix {
+      margin-left: 5px;
+      text-transform: uppercase;
+      color: #e90e3f; }
+
+.wrapper-uslugi {
+  margin-top: 50px; }
+
+.arrow__right {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0;
+  border-right: solid  #333;
+  border-bottom: solid  #333;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+  margin-left: 5px;
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+  border-width: 1px; }
+
+.popular-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.popular-services-wrapper {
+  margin-bottom: 80px; }
+
+.usluga-card-wrapper .usluga-card:hover .usluga-card__links .usluga-card__link {
+  text-decoration: underline; }
+
+.usluga-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 380px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.4s ease; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .usluga-card {
+      align-items: center; } }
+  .usluga-card:hover {
+    background-color: rgba(179, 179, 179, 0.2);
+    border-color: #eeeeee; }
+    .usluga-card:hover .usluga-card__links .usluga-card__link {
+      color: #004da6; }
+
+.usluga-card__links {
+  margin-top: auto; }
+
+.usluga-card__link {
+  display: block;
+  font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.2;
+  font-style: normal;
+  margin: 0;
+  padding: 10px 0 0 92px;
+  text-decoration: none; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .usluga-card__link {
+      text-align: center;
+      padding-left: 0; } }
+  .usluga-card__link:hover {
+    text-decoration: underline; }
+
+.card-caption {
+  display: flex;
+  align-items: center; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .card-caption {
+      flex-direction: column;
+      align-items: center; } }
+  .card-caption .card-caption__img-wrapper {
+    width: 72px;
+    min-width: 72px;
+    height: 80px;
+    margin: 0 20px 0 0; }
+    @media (min-width: 0) and (max-width: 499px) {
+      .card-caption .card-caption__img-wrapper {
+        margin: 0 0 10px 0; } }
+    .card-caption .card-caption__img-wrapper img {
+      display: block;
+      width: 100%;
+      height: auto; }
+  .card-caption .card-caption__name {
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.2;
+    font-style: normal;
+    margin: 0; }
+    @media (min-width: 0) and (max-width: 499px) {
+      .card-caption .card-caption__name {
+        text-align: center; } }
+
+.base-caption {
+  margin-bottom: 40px;
+  font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #333;
+  line-height: 2.5rem;
+  font-style: normal; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .base-caption {
+      font-size: 1.8rem; } }
+  .base-caption.base-caption--center {
+    text-align: center; }
+  .base-caption.base-caption--left {
+    text-align: left; }
+  .base-caption.base-caption--right {
+    text-align: right; }
+  .base-caption.base-caption--lg {
+    font-size: 50px; }
+  .base-caption.base-caption--sm {
+    font-size: 30px;
+    font-weight: bold; }
+  .base-caption.base-caption--xs {
+    font-size: 25px;
+    font-weight: bold; }
+
 .banner {
   background-color: white; }
 
@@ -1759,7 +1926,8 @@ label {
 
 .wrapper-footer {
   padding-bottom: 50px;
-  position: relative; }
+  position: relative;
+  background-color: #e6f4fc; }
 
 .footer {
   text-align: center; }
@@ -2030,8 +2198,7 @@ label {
 .wrapper-under {
   padding: 20px 0;
   text-align: center;
-  position: relative;
-  background-color: #e6f4fc; }
+  position: relative; }
 
 .under .under__text {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2089,6 +2256,10 @@ label {
     width: 100%;
     height: auto; }
 
+.wrapper-price {
+  text-align: center;
+  padding-bottom: 50px; }
+
 .wrapper-docs {
   padding-bottom: 50px;
   text-align: center;
@@ -2109,7 +2280,7 @@ label {
 
 .docs__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap; }
   .docs__list .docs__list-item {
     display: flex;
@@ -2150,3 +2321,44 @@ label {
         font-style: normal; }
         .docs__list .docs__list-item .wrapper-list-item__text a:hover {
           color: #003674; }
+
+.wrapper-clients {
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #e6f4fc; }
+
+.clients__caption {
+  display: block;
+  margin: 50px 0 30px 0;
+  font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  color: #333333;
+  line-height: 1.2;
+  font-style: normal; }
+  @media (min-width: 0) and (max-width: 767px) {
+    .clients__caption {
+      font-size: 2.5rem; } }
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.clients__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px; }
+  .clients__list-item a {
+    text-align: center;
+    display: block;
+    max-width: 320px; }
+  .clients__list-item p {
+    display: block;
+    font-family: "Ekibastuz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.25rem;
+    color: #000000;
+    line-height: 1.2;
+    font-style: normal;
+    margin-bottom: 0; }
