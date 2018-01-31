@@ -1715,8 +1715,8 @@ label {
 
 .banner-logo {
   display: inline-block;
-  margin: 0 !important;
-  text-decoration: none !important; }
+  margin: 0;
+  text-decoration: none; }
   .banner-logo .banner-logo__prefix {
     display: flex;
     margin: 0;
@@ -1753,10 +1753,12 @@ label {
 .popular-services {
   display: flex;
   flex-wrap: wrap;
+  text-align: left;
   justify-content: space-around; }
 
 .popular-services-wrapper {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  text-align: center; }
 
 .usluga-card-wrapper .usluga-card:hover .usluga-card__links .usluga-card__link {
   text-decoration: underline; }
@@ -2133,7 +2135,8 @@ label {
   background: #004da6;
   position: relative;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   @media (max-width: 992px) {
     .wrapper-nav {
       display: none; } }
@@ -2284,7 +2287,7 @@ label {
   flex-wrap: wrap; }
   .docs__list .docs__list-item {
     display: flex;
-    min-width: 320px;
+    max-width: 320px;
     margin-bottom: 20px;
     margin-right: 20px; }
     .docs__list .docs__list-item:last-child {
