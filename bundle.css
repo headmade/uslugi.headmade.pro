@@ -2328,6 +2328,20 @@ label {
       .info__segment-text .info__segment-list .info__segment-list-item p .info__segment-list-item-sale_color5 {
         color: #b40037; }
 
+.info__segment-list-item-icon {
+  background: #28a9b1;
+  min-width: 20px;
+  max-width: 20px;
+  height: 21px;
+  border-radius: 4px;
+  margin-right: 10px; }
+  .info__segment-list-item-icon img {
+    display: block;
+    width: 100%;
+    height: auto;
+    height: 100%;
+    padding: 1px; }
+
 .wrapper-nav {
   background: #0063b0;
   position: relative;
