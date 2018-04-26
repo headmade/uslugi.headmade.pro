@@ -2120,7 +2120,16 @@ label {
       display: inline-block; } }
 
 .banner__core {
-  text-align: center; }
+  text-align: center;
+  height: 480px;
+  width: 100%; }
+  @media (max-width: 992px) {
+    .banner__core {
+      height: 280px; } }
+  .banner__core img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 .wrapper-footer {
   padding-bottom: 50px;
