@@ -1,0 +1,72 @@
+{
+  "assetsByChunkName": {
+    "path---uslugi": [
+      "path---uslugi-b9dc5960f41413e6e252.js",
+      "path---uslugi-b9dc5960f41413e6e252.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-542527df47ef4d34a122.js",
+      "component---src-pages-index-js-542527df47ef4d34a122.js.map"
+    ],
+    "component---src-pages-uslugi-js": [
+      "component---src-pages-uslugi-js-12c8da2402e4dc32b4a3.js",
+      "component---src-pages-uslugi-js-12c8da2402e4dc32b4a3.js.map"
+    ],
+    "path---uslugi-1": [
+      "path---uslugi-1-535adc3ecc1c665e421c.js",
+      "path---uslugi-1-535adc3ecc1c665e421c.js.map"
+    ],
+    "path---uslugi-2": [
+      "path---uslugi-2-1c81cf47532348ce1cda.js",
+      "path---uslugi-2-1c81cf47532348ce1cda.js.map"
+    ],
+    "path---": [
+      "path----622d5056e12760aebb06.js",
+      "path----622d5056e12760aebb06.js.map"
+    ],
+    "path---uslugi-212": [
+      "path---uslugi-212-3d870e071c1715b64fc5.js",
+      "path---uslugi-212-3d870e071c1715b64fc5.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-3103b39923fe970f8881.js",
+      "component---src-layouts-index-js-3103b39923fe970f8881.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-c4c741337ccf87c32ab1.js",
+      "commons-c4c741337ccf87c32ab1.js.map"
+    ],
+    "path---uslugi-12": [
+      "path---uslugi-12-187d01334dd22fd3003e.js",
+      "path---uslugi-12-187d01334dd22fd3003e.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-usluga-template-js": [
+      "component---src-templates-usluga-template-js-69a0d57df5a533f3d92f.js",
+      "component---src-templates-usluga-template-js-69a0d57df5a533f3d92f.js.map"
+    ],
+    "app": [
+      "app-ee587cbd81a3cfe57907.js",
+      "app-ee587cbd81a3cfe57907.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---uslugi-3": [
+      "path---uslugi-3-4367b405fbb8335a05d7.js",
+      "path---uslugi-3-4367b405fbb8335a05d7.js.map"
+    ]
+  }
+}
