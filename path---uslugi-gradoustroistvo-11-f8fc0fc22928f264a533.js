@@ -1,0 +1,2 @@
+webpackJsonp([2818471931670],{359:function(t,a){t.exports={data:{markdownRemark:{html:"<p>markdown info:</p>",frontmatter:{date:"June 22, 2018",icon:"/images/usluga.svg",title:"Согласование средств наружной информации"}}},pathContext:{}}}});
+//# sourceMappingURL=path---uslugi-gradoustroistvo-11-f8fc0fc22928f264a533.js.map
