@@ -1,24 +1,20 @@
 {
   "assetsByChunkName": {
     "path---uslugi-gradoustroistvo-11": [
-      "path---uslugi-gradoustroistvo-11-f8fc0fc22928f264a533.js",
-      "path---uslugi-gradoustroistvo-11-f8fc0fc22928f264a533.js.map"
+      "path---uslugi-gradoustroistvo-11-ecda17357b9f8b4f31c3.js",
+      "path---uslugi-gradoustroistvo-11-ecda17357b9f8b4f31c3.js.map"
     ],
     "path---uslugi": [
-      "path---uslugi-b46d1a1c4561a72ea9f8.js",
-      "path---uslugi-b46d1a1c4561a72ea9f8.js.map"
-    ],
-    "component---src-templates-modules-template-js": [
-      "component---src-templates-modules-template-js-cfb8ec72cbac72d0af9c.js",
-      "component---src-templates-modules-template-js-cfb8ec72cbac72d0af9c.js.map"
+      "path---uslugi-18d5b44ee901ce42600b.js",
+      "path---uslugi-18d5b44ee901ce42600b.js.map"
     ],
     "path---uslugi-gradoustroistvo-2": [
-      "path---uslugi-gradoustroistvo-2-de0349f13434066c9ec5.js",
-      "path---uslugi-gradoustroistvo-2-de0349f13434066c9ec5.js.map"
+      "path---uslugi-gradoustroistvo-2-5ad603cb42a52dd273e1.js",
+      "path---uslugi-gradoustroistvo-2-5ad603cb42a52dd273e1.js.map"
     ],
     "path---modules-blagoustroistvo-1": [
-      "path---modules-blagoustroistvo-1-dc5bd1db22d59a93cbfb.js",
-      "path---modules-blagoustroistvo-1-dc5bd1db22d59a93cbfb.js.map"
+      "path---modules-blagoustroistvo-1-1aa1cbf00dbedd54479a.js",
+      "path---modules-blagoustroistvo-1-1aa1cbf00dbedd54479a.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-57bf109ca70683e82480.js",
@@ -29,16 +25,16 @@
       "component---src-pages-uslugi-js-e05ed845409452565c4c.js.map"
     ],
     "component---src-pages-modules-js": [
-      "component---src-pages-modules-js-4c6167c13b3a90387ce1.js",
-      "component---src-pages-modules-js-4c6167c13b3a90387ce1.js.map"
+      "component---src-pages-modules-js-91342b1c37427550af4e.js",
+      "component---src-pages-modules-js-91342b1c37427550af4e.js.map"
     ],
     "path---": [
       "path----622d5056e12760aebb06.js",
       "path----622d5056e12760aebb06.js.map"
     ],
     "path---uslugi-blagoustroistvo-3": [
-      "path---uslugi-blagoustroistvo-3-9365790aa785f2286672.js",
-      "path---uslugi-blagoustroistvo-3-9365790aa785f2286672.js.map"
+      "path---uslugi-blagoustroistvo-3-a0cb4d19499a1e136dfd.js",
+      "path---uslugi-blagoustroistvo-3-a0cb4d19499a1e136dfd.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-9768198d12180da36608.js",
@@ -57,36 +53,40 @@
       "commons-c4c741337ccf87c32ab1.js.map"
     ],
     "path---modules": [
-      "path---modules-b46d1a1c4561a72ea9f8.js",
-      "path---modules-b46d1a1c4561a72ea9f8.js.map"
+      "path---modules-18d5b44ee901ce42600b.js",
+      "path---modules-18d5b44ee901ce42600b.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---uslugi-blagoustroistvo-2": [
-      "path---uslugi-blagoustroistvo-2-98bdb4a6a5fe108c5e84.js",
-      "path---uslugi-blagoustroistvo-2-98bdb4a6a5fe108c5e84.js.map"
+      "path---uslugi-blagoustroistvo-2-673d74693efaa9c65ef3.js",
+      "path---uslugi-blagoustroistvo-2-673d74693efaa9c65ef3.js.map"
+    ],
+    "component---src-templates-usluga-template-js": [
+      "component---src-templates-usluga-template-js-3a88b2a1acfd81e8cd20.js",
+      "component---src-templates-usluga-template-js-3a88b2a1acfd81e8cd20.js.map"
     ],
     "app": [
-      "app-aa0079b9657ad9d2c20e.js",
-      "app-aa0079b9657ad9d2c20e.js.map"
+      "app-ae555c26b31e20722ab9.js",
+      "app-ae555c26b31e20722ab9.js.map"
     ],
     "path---modules-blagoustroistvo-2": [
-      "path---modules-blagoustroistvo-2-ad2cd9f8d0111a321736.js",
-      "path---modules-blagoustroistvo-2-ad2cd9f8d0111a321736.js.map"
+      "path---modules-blagoustroistvo-2-2be1057ee414d3dc143e.js",
+      "path---modules-blagoustroistvo-2-2be1057ee414d3dc143e.js.map"
     ],
     "path---modules-blagoustroistvo-3": [
-      "path---modules-blagoustroistvo-3-61fccc37d7af69b2a496.js",
-      "path---modules-blagoustroistvo-3-61fccc37d7af69b2a496.js.map"
+      "path---modules-blagoustroistvo-3-1e552b38a5a832a6b6e9.js",
+      "path---modules-blagoustroistvo-3-1e552b38a5a832a6b6e9.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---uslugi-blagoustroistvo-1": [
-      "path---uslugi-blagoustroistvo-1-e967f13e22070d6a1816.js",
-      "path---uslugi-blagoustroistvo-1-e967f13e22070d6a1816.js.map"
+      "path---uslugi-blagoustroistvo-1-ca480c9a28b5f41cccdd.js",
+      "path---uslugi-blagoustroistvo-1-ca480c9a28b5f41cccdd.js.map"
     ]
   }
 }
