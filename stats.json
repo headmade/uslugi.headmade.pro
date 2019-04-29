@@ -1,5 +1,9 @@
 {
   "assetsByChunkName": {
+    "component---src-pages-en-index-js": [
+      "component---src-pages-en-index-js-0740702d2a6eafa77b40.js",
+      "component---src-pages-en-index-js-0740702d2a6eafa77b40.js.map"
+    ],
     "path---uslugi-gradoustroistvo-11": [
       "path---uslugi-gradoustroistvo-11-ecda17357b9f8b4f31c3.js",
       "path---uslugi-gradoustroistvo-11-ecda17357b9f8b4f31c3.js.map"
@@ -37,8 +41,8 @@
       "path---uslugi-blagoustroistvo-3-a0cb4d19499a1e136dfd.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-9768198d12180da36608.js",
-      "component---src-layouts-index-js-9768198d12180da36608.js.map"
+      "component---src-layouts-index-js-e7af58ebcaecf926ee02.js",
+      "component---src-layouts-index-js-e7af58ebcaecf926ee02.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -69,8 +73,8 @@
       "component---src-templates-usluga-template-js-3a88b2a1acfd81e8cd20.js.map"
     ],
     "app": [
-      "app-ae555c26b31e20722ab9.js",
-      "app-ae555c26b31e20722ab9.js.map"
+      "app-f53a001a0b7acc7f6b22.js",
+      "app-f53a001a0b7acc7f6b22.js.map"
     ],
     "path---modules-blagoustroistvo-2": [
       "path---modules-blagoustroistvo-2-2be1057ee414d3dc143e.js",
@@ -79,6 +83,10 @@
     "path---modules-blagoustroistvo-3": [
       "path---modules-blagoustroistvo-3-1e552b38a5a832a6b6e9.js",
       "path---modules-blagoustroistvo-3-1e552b38a5a832a6b6e9.js.map"
+    ],
+    "path---en": [
+      "path---en-a0e39f21c11f6a62c5ab.js",
+      "path---en-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---404": [
       "path---404-a0e39f21c11f6a62c5ab.js",
