@@ -1,2 +1,0 @@
-webpackJsonp([0xec0942ff462],{360:function(t,a){t.exports={data:{markdownRemark:{html:"<p>markdown info:</p>",frontmatter:{date:"June 07, 2018",icon:"/images/usluga.svg",title:"Разрешения на вырубку/кронирование/посадку"}}},pathContext:{}}}});
-//# sourceMappingURL=path---uslugi-gradoustroistvo-2-de0349f13434066c9ec5.js.map
