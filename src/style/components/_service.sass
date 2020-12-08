@@ -1,0 +1,222 @@
+@import '../settings/mixin'
+@import '../settings/media'
+@import '../settings/vars'
+
+.content-wrapper
+  padding: 60px 0
+  flex: 1
+  border-top: 1px solid color('text')
+  border-bottom: 1px solid color('text')
+
+.nameCategory
+  margin-bottom: 40px
+  & .card-caption
+    margin-bottom: 20px
+  & button
+    margin: 0
+
+$titleStep__text_ff: $general-ff-ekibastuz
+$titleStep__text_font-weight: $general-font-weight
+$titleStep__text-bold_font-weight: $general-font-weight-bold
+$titleStep__text_font-size: 17px
+.organization
+  & .organization__caption
+    @include font($titleStep__text_ff, $titleStep__text-bold_font-weight, $titleStep__text_font-size)
+    margin: 0 0 10px 0
+  & .organization__list
+    padding: 0 0 0 20px
+    margin: 0 0 20px 0
+    & .organization__item
+      @include font($titleStep__text_ff, $titleStep__text_font-weight, $titleStep__text_font-size)
+      margin-bottom: 10px
+
+.service
+  margin: 0 0 20px 0
+
+
+
+
+// title step
+
+$titleStep__text_ff: $general-ff-ekibastuz
+$titleStep__text_font-weight: $general-font-weight
+$titleStep__text-bold_font-weight: $general-font-weight-bold
+$titleStep__text_font-size: 17px
+.titleStep
+  .titleStep__text
+    @include font($titleStep__text_ff, $titleStep__text_font-weight, $titleStep__text_font-size)
+  .titleStep__text-bold
+    @include font($titleStep__text_ff, $titleStep__text-bold_font-weight, $titleStep__text_font-size)
+    margin-right: 10px
+
+
+$titleStep__list-padding_vertical: 20px
+$titleStep__list-padding_left: 60px
+.titleStep__list
+  margin: 0
+  padding: $titleStep__list-padding_vertical 0 $titleStep__list-padding_vertical $titleStep__list-padding_left
+
+  $list__caption_font-size: 24px
+  $list__caption-padding-bottom: 20px
+  .list__caption
+    position: relative
+    @include font($general-ff-helvetica, $general-font-weight-bold, $list__caption_font-size)
+    list-style: none
+    padding-bottom: $list__caption-padding-bottom
+
+    $list__caption-after_width: 15px
+    $list__caption-after_height: $list__caption-after_width
+    $list__caption-after_bottom: 10px
+    $list__caption-after_left: -46px
+    $list__caption-after_bg-color: transparent
+    $list__caption-after_border-width: 3px
+    &:after
+      box-sizing: border-box
+      @include pseudo($list__caption-after_width, $list__caption-after_height, auto, auto, $list__caption-after_bottom, $list__caption-after_left)
+      border-bottom: $list__caption-after_border-width solid
+      border-right: $list__caption-after_border-width solid
+      transform: rotate(45deg)
+      background-color: $list__caption-after_bg-color
+
+    $list__caption-before_width: 3px
+    $list__caption-before_height: 100%
+    $list__caption-before_top: -10px
+    $list__caption-before_left: -40px
+    $list__caption-before_border-radius: $general-border-radius
+    &:before
+      @include pseudo($list__caption-before_width, $list__caption-before_height, $list__caption-before_top, auto, auto, $list__caption-before_left)
+      border-radius: $list__caption-before_border-radius
+  .list__content
+    list-style: none
+    margin-bottom: 20px
+    @include font($titleStep__text_ff, $titleStep__text_font-weight, $titleStep__text_font-size)
+
+$color-theme: (transportAndDriving: $transportAndDriving, primary: color('primary', 'light'))
+@each $name, $color in $color-theme
+  .titleStep__list.#{$name} .list__caption
+    &:after
+      border-color: #{$color}
+  .titleStep__list.#{$name} .list__caption
+    &:before
+      background-color: #{$color}
+
+
+
+
+//  steps
+
+$steps-tip-before_width: 3px
+$steps-tip-before_height: 100%
+$steps-tip-before_top: 0
+$steps-tip-before_left: 20px
+$steps-border-radius: 4px
+$steps_padding-bottom: 40px
+$steps_padding-left: 60px
+.steps
+  margin: 0
+  padding: 0 0 $steps_padding-bottom $steps_padding-left
+  position: relative
+  &:before
+    @include pseudo($steps-tip-before_width, $steps-tip-before_height, $steps-tip-before_top, auto, auto, $steps-tip-before_left)
+    border-radius: $steps-border-radius
+
+  $steps__caption-font-size:  18px
+
+  $steps__caption-span_width: 30px
+  $steps__caption-span_height: $steps__caption-span_width
+  $steps__caption-span_top: -5px
+  $steps__caption-span_left: -53px
+  $steps__caption-span_font-size: 17px
+  $steps__caption-span_padding-left: 7px
+  $steps__caption-span_padding-top: 2px
+  $steps__caption-span_bg-color: white
+  $steps__caption-span_border-width: 3px
+  $steps__caption-span_border-radius: 50%
+  $steps__caption-span_outline-width: 5px
+  $steps__caption-span_outline-color: transparent
+  .steps__caption
+    list-style: none
+    position: relative
+    @include font($general-ff-helvetica, $general-font-weight-bold, $steps__caption-font-size)
+    margin: 0 0 20px 0
+    & span
+      @include pseudo($steps__caption-span_width, $steps__caption-span_height, $steps__caption-span_top, auto, auto, $steps__caption-span_left)
+      display: block
+      padding-left: $steps__caption-span_padding-left
+      padding-top: $steps__caption-span_padding-top
+      background: $steps__caption-span_bg-color
+      font-size: $steps__caption-span_font-size
+      font-weight: normal
+      border-radius: $steps__caption-span_border-radius
+      border: $steps__caption-span_border-width solid
+      outline: $steps__caption-span_outline-width solid $steps__caption-span_outline-color
+      z-index: 3
+
+  $steps__content-font-size: 18px
+  $steps__content-font-color: #535B63
+  $steps__content-line-height: 28px
+  .steps__content
+    list-style: none
+    @include font($general-ff-helvetica, $general-font-weight, $steps__content-font-size, $steps__content-font-color, $steps__content-line-height)
+
+$steps-bg-gradient-to: rgba(255,255,255,1)
+
+@each $name, $color in $color-steps-theme
+  .steps.#{$name}
+    &:before
+      background: linear-gradient(to bottom, $steps-bg-gradient-to 0%, #{$color} 100%)
+    & .steps__caption span
+      border-color: #{$color}
+      color: #{$color}
+
+
+
+
+
+//last step
+
+$lastStep_padding-bottom: 40px
+$lastStep_padding-left: 60px
+.lastStep
+  margin: 0
+  padding: 0 0 $lastStep_padding-bottom $lastStep_padding-left
+
+  $service-quest__list-item_caption-font-size: 18px
+
+  $lastStep__caption-span_width: 30px
+  $lastStep__caption-span_height: $lastStep__caption-span_width
+  $lastStep__caption-span_top: 0
+  $lastStep__caption-span_left: -53px
+  $lastStep__caption-span-last-before_width: 15px
+  $lastStep__caption-span-last-before_height: 10px
+  $lastStep__caption-span-last-before_top: 7px
+  $lastStep__caption-span-last-before_left: 7px
+  $lastStep__caption-span-last-before_border-width: 3px
+  $lastStep__caption-span-last-before_border-color: white
+  .lastStep__caption
+    position: relative
+    list-style: none
+    margin: 0 0 20px 0
+    @include font($general-ff-helvetica, $general-font-weight-bold, $service-quest__list-item_caption-font-size)
+    & span
+      display: block
+      @include pseudo($lastStep__caption-span_width, $lastStep__caption-span_height, $lastStep__caption-span_top, auto, auto, $lastStep__caption-span_left)
+      border-radius: 50%
+      &:before
+        box-sizing: border-box
+        @include pseudo($lastStep__caption-span-last-before_width, $lastStep__caption-span-last-before_height, $lastStep__caption-span-last-before_top, auto, auto, $lastStep__caption-span-last-before_left)
+        background-color: transparent
+        transform: rotate(-45deg)
+        border-bottom: $lastStep__caption-span-last-before_border-width solid $lastStep__caption-span-last-before_border-color
+        border-left: $lastStep__caption-span-last-before_border-width solid $lastStep__caption-span-last-before_border-color
+
+  $lastStep__content-font-size: 18px
+  $lastStep__content-font-color: #535B63
+  $lastStep__content-line-height: 28px
+  .lastStep__content
+    list-style: none
+    @include font($general-ff-helvetica, $general-font-weight, $lastStep__content-font-size, $lastStep__content-font-color, $lastStep__content-line-height)
+
+@each $name, $color in $color-steps-theme
+  .lastStep.#{$name} .lastStep__caption span
+    background-color: #{$color}

@@ -1,0 +1,77 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/media'
+@import '../../style/settings/vars'
+
+$nav-bg-color: color('primary')
+.wrapper-nav
+  background: $nav-bg-color
+  position: relative
+  top: 0
+  width: 100%
+  z-index: 1000
+  @include large
+    display: none
+  &.fixed
+    position: fixed
+
+
+$nav__list-item-size: 20px
+$nav__list-item-color: color('text', 'white')
+$nav__list-item-family: $general-ff-ekibastuz
+$nav__list-item-weight: $general-font-weight-bold
+$nav__list-item-margin-vertical: $general-vertical-step-normal
+.nav__list
+  position: relative
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  & .nav__list-item
+    a
+      display: block
+      padding: $nav__list-item-margin-vertical
+      @include font($nav__list-item-family, $nav__list-item-weight, $nav__list-item-size, $nav__list-item-color)
+      transition: $general-transition
+      &:hover
+        opacity: 0.7
+
+
+$nav-bg-color: color('white')
+.wrapper-nav-sticky
+  background: $nav-bg-color
+  position: fixed
+  top: 0
+  width: 100%
+  height: 50px
+  border-bottom: 1px solid color('text')
+  display: none
+  @include large
+    display: block
+
+
+$nav__list-item-size: 20px
+$nav__list-item-color: color('text')
+$nav__list-item-family: $general-ff-ekibastuz
+$nav__list-item-weight: $general-font-weight-bold
+$nav__list-item-margin-vertical: $general-vertical-step-normal
+
+.nav-sticky .nav__list
+  position: absolute
+  flex-direction: column
+  flex-wrap: wrap
+  border-bottom: 1px solid color('text')
+  width: 100%
+  left: 0
+  top: 50px
+  background: white
+  display: none
+  &.active
+    display: flex
+  & .nav__list-item
+    a
+      display: block
+      padding: $nav__list-item-margin-vertical
+      @include font($nav__list-item-family, $nav__list-item-weight, $nav__list-item-size, $nav__list-item-color)
+      transition: $general-transition
+      &:hover
+        opacity: 0.7
+

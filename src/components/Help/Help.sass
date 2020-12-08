@@ -1,0 +1,50 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/vars'
+@import '../../style/settings/media'
+
+$footer__wrapper-padding-bottom: $general-vertical-step-largeXXX
+$footer__wrapper-bg-color: color('secondary')
+.wrapper-footer
+  padding-bottom: $footer__wrapper-padding-bottom
+  position: relative
+  //background-color: color('secondary')
+
+
+$footer__caption-size: 48px
+$footer__caption-color: color('text', 'dark')
+$footer__caption-family: $general-ff-ekibastuz
+$footer__caption-weight: $general-font-weight-light
+$footer__caption-margin-top: $general-vertical-step-largeXXX
+$footer__caption-margin-bottom: $general-vertical-step-small
+
+$footer__text-ff: $general-ff-helvetica
+$footer__text-weight: $general-font-weight
+$footer__text-size: 15px
+$footer__text-color: color('text', 'base')
+$footer__text-margin-bottom: $general-vertical-step-normal
+
+$footer__cat-width: 150px
+.footer
+  text-align: center
+  & .footer__caption
+    display: block
+    margin: $footer__caption-margin-top 0 $footer__caption-margin-bottom 0
+    @include font($footer__caption-family, $footer__caption-weight, $footer__caption-size, $footer__caption-color)
+
+  & .footer__text
+    max-width: 400px
+    margin: 0 auto $footer__text-margin-bottom
+    @include font($footer__text-ff, $footer__text-weight, $footer__text-size, $footer__text-color)
+
+  & .footer__cat
+    width: $footer__cat-width
+    position: absolute
+    bottom: 0
+    right: 70px
+    margin-right: 0
+    @include large
+      position: relative
+      bottom: 0
+      right: -30px
+      display: block
+      margin: 35px auto -50px

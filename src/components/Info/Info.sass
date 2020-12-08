@@ -1,0 +1,139 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/media'
+@import '../../style/settings/vars'
+
+.wrapper-info
+  margin-top: rem-calcF(65px)
+  @include large
+    margin-top: 0
+
+$info__caption-size: 48px
+$info__caption-color: color('text', 'dark')
+$info__caption-family: $general-ff-ekibastuz
+$info__caption-weight: $general-font-weight-light
+$info__caption-margin-vertical: $general-vertical-step-largeXXX
+.info
+  margin-bottom: $info__caption-margin-vertical
+  text-align: center
+  .info__caption
+    display: block
+    text-align: center
+    margin: $info__caption-margin-vertical 0
+    @include font($info__caption-family, $info__caption-weight, $info__caption-size, $info__caption-color)
+
+.info__segment
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-bottom: 50px
+  text-align: left
+  &:nth-child(odd)
+    flex-direction: row-reverse
+  @include small
+    flex-direction: column
+    &:nth-child(odd)
+     flex-direction: column
+
+.info__segment-wrapper-img
+  max-width: 270px
+  width: 100%
+  margin-right: 50px
+  @include small
+    margin-right: 0
+  & img
+    @include img()
+
+$info__segment-caption-size: 22px
+$info__segment-caption-color: color('text', 'dark')
+$info__segment-caption-family: $general-ff-ekibastuz
+$info__segment-caption-weight: $general-font-weight-bold
+
+$info__segment-link-size: 16px
+$info__segment-link-family: $general-ff-ekibastuz
+$info__segment-link-weight: $general-font-weight-bold
+
+$info__segment-svg-width: 10px
+$info__segment-svg-height: $info__segment-svg-width
+$info__segment-svg-margin-right: 15px
+
+$info__segment-text-size: 16px
+$info__segment-text-color: color('text', 'base')
+$info__segment-text-family: $general-ff-helvetica
+$info__segment-text-weight: $general-font-weight
+$info__segment-text-padding-left: $info__segment-svg-width + $info__segment-svg-margin-right
+
+$info__section-color1: $section-1
+$info__section-color2: $section-2
+$info__section-color3: $section-3
+$info__section-color4: $section-4
+$info__section-color5: $section-5
+
+.info__segment-text
+  max-width: 520px
+  padding: 20px
+  & .info-segment-title
+    margin-bottom: 20px
+    @include font($info__segment-caption-family, $info__segment-caption-weight, $info__segment-caption-size, $info__segment-caption-color)
+  & .info__segment-list
+    & .info__segment-list-item
+      margin-bottom: 15px
+      & .info__segment-list-item-link
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+        @include font($info__segment-link-family, $info__segment-link-weight, $info__segment-link-size)
+        text-decoration: underline
+        transition: $general-transition
+        &:hover
+          text-decoration: none
+        & .info__segment-list-item-svg
+          height: $info__segment-svg-width
+          width: $info__segment-svg-height
+          margin-right: $info__segment-svg-margin-right
+        & .info__segment-list-item-svg_color1
+          fill: $info__section-color1
+        & .info__segment-list-item-svg_color2
+          fill: $info__section-color2
+        & .info__segment-list-item-svg_color3
+          fill: $info__section-color3
+        & .info__segment-list-item-svg_color4
+          fill: $info__section-color4
+        & .info__segment-list-item-svg_color5
+          fill: $info__section-color5
+      & .info__segment-list-item-link-color1
+        color: $info__section-color1
+      & .info__segment-list-item-link-color2
+        color: $info__section-color2
+      & .info__segment-list-item-link-color3
+        color: $info__section-color3
+      & .info__segment-list-item-link-color4
+        color: $info__section-color4
+      & .info__segment-list-item-link-color5
+        color: $info__section-color5
+      & p
+        padding-left: $info__segment-text-padding-left
+        @include font($info__segment-text-family, $info__segment-text-weight, $info__segment-text-size, $info__segment-text-color)
+        & .info__segment-list-item-sale
+          font-size: 20px
+        & .info__segment-list-item-sale_color1
+          color: $info__section-color1
+        & .info__segment-list-item-sale_color2
+          color: $info__section-color2
+        & .info__segment-list-item-sale_color3
+          color: $info__section-color3
+        & .info__segment-list-item-sale_color4
+          color: $info__section-color4
+        & .info__segment-list-item-sale_color5
+          color: $info__section-color5
+
+.info__segment-list-item-icon
+  background: $info__section-color1
+  min-width: 20px
+  max-width: 20px
+  height: 21px
+  border-radius: 4px
+  margin-right: 10px
+  & img
+    @include img()
+    height: 100%
+    padding: 1px

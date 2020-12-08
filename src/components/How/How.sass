@@ -1,0 +1,56 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/vars'
+
+$wrapper-how-bg-color: color('secondary')
+$wrapper-how-margin-bottom: $general-vertical-step-largeXXX
+.wrapper-how
+  background-color: $wrapper-how-bg-color
+  padding-bottom: $wrapper-how-margin-bottom
+
+$how__caption-size: 48px
+$how__caption-color: color('text', 'dark')
+$how__caption-family: $general-ff-ekibastuz
+$how__caption-weight: $general-font-weight-light
+$how__caption-margin-vertical: $general-vertical-step-largeXXX
+
+$how__list-item-text-ff: $general-ff-ekibastuz
+$how__list-item-text-weight: $general-font-weight
+$how__list-item-text-size: 18px
+$how__list-item-text-color: color('text', 'dark')
+$how__list-item-margin-bottom: $general-vertical-step-largeX
+
+$how__under-btn-ff: $general-ff-helvetica
+$how__under-btn-weight: $general-font-weight
+$how__under-btn-size: 19px
+$how__under-btn-color: color('text', 'dark')
+.how
+  text-align: center
+  & .how__caption
+    display: block
+    margin: $how__caption-margin-vertical 0
+    @include font($how__caption-family, $how__caption-weight, $how__caption-size, $how__caption-color)
+  & .how__list
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    align-items: flex-start
+    text-align: center
+    margin-bottom: $how__list-item-margin-bottom
+    & .how__list-item
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 159px
+      & .how__img-wrapper
+        & img
+          max-width: 123px
+          max-height: 70px
+          margin: 0 auto 30px
+          display: block
+    & .how__list-item-text
+      @include font($how__list-item-text-ff, $how__list-item-text-weight, $how__list-item-text-size, $how__list-item-text-color)
+
+  & .how__under-btn
+    margin-top: 35px
+    margin-bottom: 0
+    @include font($how__under-btn-ff, $how__under-btn-weight, $how__under-btn-size, $how__under-btn-color)

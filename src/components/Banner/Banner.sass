@@ -1,0 +1,75 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/media'
+@import '../../style/settings/vars'
+
+$banner__logo-ff: $general-ff-ekibastuz
+$banner__logo-weight: $general-font-weight-bold
+$banner__logo-size: 35px
+$banner__logo-color: color('primary')
+$banner__logo-span-color: color('accent')
+$banner__logo-margin-bottom: $general-vertical-step-smallXX
+
+$banner__text-ff: $general-ff-helvetica
+$banner__text-weight: $general-font-weight-bold
+$banner__text-size: 16px
+$banner__text-color: color('text', 'light')
+
+$banner__core-margin-bottom: $general-vertical-step-largeXXX
+.banner
+  background-color: color('white')
+  .other-lang
+    width: 60px
+    .seporator
+      color: #0063b0
+      padding: 0 2px
+.banner__annotation
+  position: relative
+  z-index: 1
+  width: 100%
+  bottom: 0
+  left: 0
+  display: flex
+  align-items: center
+  padding: 20px
+  background-color: color('white')
+  @include large
+    position: fixed
+    left: 20px
+    top: 10px
+    bottom: auto
+    width: 70%
+    padding: 0
+  & .banner-logo
+    @include font($banner__logo-ff, $banner__logo-weight, $banner__logo-size, $banner__logo-color)
+    margin-right: 20px
+    display: flex
+    & span
+      margin-left: 5px
+      text-transform: uppercase
+      color: $banner__logo-span-color
+  & .banner-text
+    @include font($banner__text-ff, $banner__text-weight, $banner__text-size, $banner__text-color)
+    max-width: 900px
+    margin-bottom: 0
+    @include large
+      display: none
+
+.banner-text--in-small
+  @include font($banner__text-ff, $banner__text-weight, $banner__text-size, $banner__text-color)
+  max-width: 900px
+  margin: $banner__core-margin-bottom 0 0 0
+  padding: 1.25rem
+  display: none
+  @include large
+    display: inline-block
+
+.banner__core
+  text-align: center
+  height: 480px
+  width: 100%
+  @include large
+    height: 280px
+  & img
+    width: 100%
+    height: 100%
+    object-fit: cover

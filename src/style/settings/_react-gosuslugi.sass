@@ -1,0 +1,169 @@
+@import 'mixin'
+@import 'media'
+@import 'vars'
+
+.banner-logo
+  display: inline-block
+  margin: 0
+  text-decoration: none
+  & .banner-logo__prefix
+    $banner-logo__prefix_ff: $general-ff-ekibastuz
+    $banner-logo__prefix_weight: $general-font-weight-bold
+    $banner-logo__prefix_size: 30px
+    $banner-logo__prefix_color: color('primary')
+
+    display: flex
+    margin: 0
+    @include font($banner-logo__prefix_ff, $banner-logo__prefix_weight, $banner-logo__prefix_size, $banner-logo__prefix_color)
+    text-transform: uppercase
+
+    & .banner-logo__suffix
+      $banner-logo__suffix_color: color('accent')
+
+      margin-left: 5px
+      text-transform: uppercase
+      color: $banner-logo__suffix_color
+
+.wrapper-modules
+  padding-top: 50px
+  background-color: color('secondary')
+
+.wrapper-uslugi
+  margin-top: 50px
+
+.arrow__right
+  position: relative
+  @include inline-block(middle)
+  padding: 0
+  border-right: solid  #333
+  border-bottom: solid  #333
+  box-sizing: border-box
+  transform: rotate(-45deg)
+  margin-left: 5px
+  min-width: 8px
+  width: 8px
+  height: 8px
+  border-width: 1pxwrapper-under
+
+.popular-services
+  display: flex
+  flex-wrap: wrap
+  text-align: left
+  justify-content: space-around
+
+.popular-services-wrapper
+  margin-bottom: 80px
+  text-align: center
+
+.usluga-card-wrapper .usluga-card:hover .usluga-card__links .usluga-card__link
+  text-decoration: underline
+
+.usluga-card
+  $usluga-card__vertical-step-normal: 20px
+  $usluga-card__transition: $general-transition
+  $usluga-card__width: 380px
+  $usluga-card__border-radius: 5px
+
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: $usluga-card__width
+  padding: $usluga-card__vertical-step-normal
+  margin-bottom: $usluga-card__vertical-step-normal
+  border: 1px solid transparent
+  border-radius: $usluga-card__border-radius
+  text-decoration: none
+  transition: $usluga-card__transition
+  @include small
+    align-items: center
+  &:hover
+    $popular-services-bg-color: color('white', 'dark','lighter')
+    $popular-services-border-color: color('text','lighter')
+
+    background-color: $popular-services-bg-color
+    border-color: $popular-services-border-color
+    & .usluga-card__links .usluga-card__link
+      color: color('primary')
+
+.usluga-card__links
+  margin-top: auto
+
+.usluga-card__link
+  $usluga-card__link-ff: $general-ff-ekibastuz
+  $usluga-card__link-font-weight: $general-font-weight
+  $usluga-card__link-font-size: $general-font-size
+  $usluga-card__link-font-color: color('text')
+  $usluga-card__link-line-height: $general-font-line-height
+  $usluga-card__link-padding-top: 10px
+  $usluga-card__link-padding-left: 92px
+
+  display: block
+  @include font($usluga-card__link-ff, $usluga-card__link-font-weight, $usluga-card__link-font-size, $usluga-card__link-font-color, $usluga-card__link-line-height)
+  margin: 0
+  padding: $usluga-card__link-padding-top 0 0 $usluga-card__link-padding-left
+  text-decoration: none
+  @include small
+    text-align: center
+    padding-left: 0
+  &:hover
+    text-decoration: underline
+
+
+.card-caption
+  display: flex
+  align-items: center
+  @include small
+    flex-direction: column
+    align-items: center
+  & .card-caption__img-wrapper
+    $card-caption-img-width: 72px
+    $card-caption-img-height: 80px
+    $card-caption-img-margin-right: 20px
+    $card-caption-vertical-step-smallX: $general-vertical-step-smallX
+
+    width: $card-caption-img-width
+    min-width: $card-caption-img-width
+    height: $card-caption-img-height
+    margin: 0 $card-caption-img-margin-right 0 0
+    @include xsmall
+      margin: 0 0 $card-caption-vertical-step-smallX 0
+    & img
+      @include img()
+  & .card-caption__name
+    $card-caption__name_font-size: 20px
+    $card-caption__name_line-height: $general-font-line-height
+    $card-caption__name_ff: $general-ff-ekibastuz
+    $card-caption__name_font-weight: $general-font-weight-bold
+    $card-caption__name_font-color: #333
+
+    @include font($card-caption__name_ff, $card-caption__name_font-weight, $card-caption__name_font-size, $card-caption__name_font-color, $card-caption__name_line-height)
+    margin: 0
+    @include xsmall
+      text-align: center
+
+
+$base-caption-vertical-step: 40px
+$base-caption-ff: $general-ff-ekibastuz
+$base-caption-font-weight: $general-font-weight-light
+$base-caption-font-size: 40px
+$base-caption-font-line-height: 2.5rem
+.base-caption
+  margin-bottom: $base-caption-vertical-step
+  @include font($base-caption-ff, $general-font-weight-light, $base-caption-font-size, #333, $base-caption-font-line-height)
+  @include small
+    font-size: 1.8rem
+
+  &.base-caption--center
+    text-align: center
+  &.base-caption--left
+    text-align: left
+  &.base-caption--right
+    text-align: right
+  &.base-caption--lg
+    font-size: 50px
+  &.base-caption--sm
+    font-size: 30px
+    font-weight: bold
+  &.base-caption--xs
+    font-size: 25px
+    font-weight: bold

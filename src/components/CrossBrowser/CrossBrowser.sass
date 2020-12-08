@@ -1,0 +1,31 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/media'
+@import '../../style/settings/vars'
+
+
+$wrapper-cross-margin-bottom: $general-vertical-step-largeXXX
+.wrapper-cross-browser
+  padding-bottom: $wrapper-cross-margin-bottom
+  text-align: center
+
+$cross-browser__caption-size: 48px
+$cross-browser__caption-color: color('text', 'dark')
+$cross-browser__caption-family: $general-ff-ekibastuz
+$cross-browser__caption-weight: $general-font-weight-light
+$cross-browser__caption-margin-vertical: $general-vertical-step-largeXXX
+
+$cross-browser__wrapper-img-width: 60%
+.cross-browser
+  & .cross-browser__caption
+    display: block
+    margin: $cross-browser__caption-margin-vertical 0
+    @include font($cross-browser__caption-family, $cross-browser__caption-weight, $cross-browser__caption-size, $cross-browser__caption-color)
+    @include small
+      font-size: rem-calcF(40px)
+  & .cross-browser__wrapper-img
+    @include inline-block()
+    width: $cross-browser__wrapper-img-width
+    @include small
+      width: 80%
+    & img
+      @include img()

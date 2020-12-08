@@ -1,0 +1,30 @@
+{
+  "name": "is-uslugi",
+  "version": "1.0.0",
+  "author": "Headmade",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "cons": "cross-env ENV_VAR=abc node",
+    "develop": "gatsby develop",
+    "format": "prettier --write 'src/**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gatsby build && gh-pages -r 'https://github.com/headmade/uslugi.headmade.pro.git' -b master -d public"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  },
+  "dependencies": {
+    "foundation-sites": "^6.4.4-rc1",
+    "gatsby": "^1.9.247",
+    "gatsby-link": "^1.6.40",
+    "gatsby-plugin-react-helmet": "^2.0.10",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-yandex-metrika": "^1.2.1",
+    "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-transformer-remark": "^1.7.41",
+    "gh-pages": "^1.1.0",
+    "node-sass": "^4.12.0",
+    "react-helmet": "^5.2.0"
+  }
+}

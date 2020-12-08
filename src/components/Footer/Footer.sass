@@ -1,0 +1,39 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/vars'
+@import '../../style/settings/media'
+
+$wrapper-under-bg-color: color('secondary')
+.wrapper-under
+  padding: 20px 0
+  text-align: center
+  margin-top: auto
+  float: 0
+  position: relative
+  background-color: $wrapper-under-bg-color
+
+$under__text-ff: $general-ff-helvetica
+$under__text-weight: $general-font-weight
+$under__text-size: 13px
+$under__text-color: color('text', 'base')
+
+$under__logo-ff: $general-ff-ekibastuz
+$under__logo-weight: $general-font-weight-bold
+$under__logo-size: 30px
+$under__logo-color: color('primary')
+$under__logo-span-color: color('accent')
+.under
+  & .under__text
+    @include font($under__text-ff, $under__text-weight, $under__text-size, $under__text-color)
+  & .under__logo
+    margin-bottom: 10px
+    display: block
+    & .banner-logo
+      @include font($under__logo-ff, $under__logo-weight, $under__logo-size, $under__logo-color)
+      & span
+        color: $under__logo-span-color
+  & .under__up
+    position: absolute
+    right: 43px
+    top: 20px
+    cursor: pointer
+

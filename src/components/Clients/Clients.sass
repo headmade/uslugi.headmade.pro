@@ -1,0 +1,43 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/vars'
+@import '../../style/settings/media'
+
+$wrapper-clients-margin-bottom: $general-vertical-step-largeXXX
+$wrapper-bg-color: color('secondary')
+.wrapper-clients
+  padding-bottom: $wrapper-clients-margin-bottom
+  text-align: center
+  background-color: $wrapper-bg-color
+
+$clients__caption-size: 48px
+$clients__caption-color: color('text', 'dark')
+$clients__caption-family: $general-ff-ekibastuz
+$clients__caption-weight: $general-font-weight-light
+.clients__caption
+  display: block
+  margin: $wrapper-clients-margin-bottom 0 30px 0
+  @include font($clients__caption-family, $clients__caption-weight, $clients__caption-size, $clients__caption-color)
+  @include small
+    font-size: rem-calcF(40px)
+
+.clients__list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+$list-item__text-size: 20px
+$list-item__text-family: $general-ff-ekibastuz
+$list-item__text-weight: $general-font-weight
+.clients__list-item
+  display: flex
+  flex-wrap: wrap
+  margin: 20px
+  & a
+    text-align: center
+    display: block
+    max-width: 320px
+
+  & p
+    display: block
+    @include font($list-item__text-family, $list-item__text-weight, $list-item__text-size)
+    margin-bottom: 0

@@ -1,0 +1,67 @@
+@import '../../style/settings/mixin'
+@import '../../style/settings/vars'
+@import '../../style/settings/media'
+
+.wrapper-price
+  text-align: center
+  padding-bottom: 50px
+
+$wrapper-docs-margin-bottom: $general-vertical-step-largeXXX
+$wrapper-bg-color: color('secondary')
+.wrapper-docs
+  padding-bottom: $wrapper-docs-margin-bottom
+  text-align: center
+  background-color: color('secondary')
+
+$docs__caption-size: 48px
+$docs__caption-color: color('text', 'dark')
+$docs__caption-family: $general-ff-ekibastuz
+$docs__caption-weight: $general-font-weight-light
+$docs__caption-margin-vertical: $general-vertical-step-largeXXX
+.docs
+  & .docs__caption
+    display: block
+    margin: $docs__caption-margin-vertical 0
+    @include font($docs__caption-family, $docs__caption-weight, $docs__caption-size, $docs__caption-color)
+    @include small
+      font-size: rem-calcF(40px)
+
+$list-item__img-width: 45px
+
+$list-item__text-size: 20px
+$list-item__link-size: 16px
+$list-item__link-color: color('primary')
+$list-item__link-color-hover: color('primary', 'dark')
+$list-item__text-family: $general-ff-ekibastuz
+$list-item__text-weight: $general-font-weight
+.docs__list
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  & .docs__list-item
+    display: flex
+    max-width: 320px
+    margin-bottom: 20px
+    margin-right: 20px
+    &:last-child
+      margin-right: 0
+    @include small
+      min-width: 285px
+      margin-right: 0
+    & .wrapper-list-item__img
+      width: rem-calcF($list-item__img-width)
+      min-width: rem-calcF($list-item__img-width)
+      margin-right: 20px
+      & img
+        @include img()
+    & .wrapper-list-item__text
+      text-align: left
+      & p
+        display: block
+        @include font($list-item__text-family, $list-item__text-weight, $list-item__text-size)
+        margin-bottom: 0
+      & a
+        display: block
+        @include font($list-item__text-family, $list-item__text-weight, $list-item__link-size, $list-item__link-color)
+        &:hover
+          color: $list-item__link-color-hover
