@@ -8,9 +8,13 @@
       "path---uslugi-gradoustroistvo-11-ecda17357b9f8b4f31c3.js",
       "path---uslugi-gradoustroistvo-11-ecda17357b9f8b4f31c3.js.map"
     ],
+    "path---modules-integrations-5": [
+      "path---modules-integrations-5-280751f8ddbc42f1bd42.js",
+      "path---modules-integrations-5-280751f8ddbc42f1bd42.js.map"
+    ],
     "path---uslugi": [
-      "path---uslugi-0b67feeea14c0c284df7.js",
-      "path---uslugi-0b67feeea14c0c284df7.js.map"
+      "path---uslugi-e8457674b787bc1bc8ba.js",
+      "path---uslugi-e8457674b787bc1bc8ba.js.map"
     ],
     "path---uslugi-gradoustroistvo-2": [
       "path---uslugi-gradoustroistvo-2-5ad603cb42a52dd273e1.js",
@@ -40,9 +44,9 @@
       "path---uslugi-blagoustroistvo-3-a0cb4d19499a1e136dfd.js",
       "path---uslugi-blagoustroistvo-3-a0cb4d19499a1e136dfd.js.map"
     ],
-    "path---modules-smev-4": [
-      "path---modules-smev-4-c23cd03b9887efa79548.js",
-      "path---modules-smev-4-c23cd03b9887efa79548.js.map"
+    "path---modules-integrations-smev-4": [
+      "path---modules-integrations-smev-4-6250d9308583418cc93c.js",
+      "path---modules-integrations-smev-4-6250d9308583418cc93c.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-6a76019b3d40721a3d24.js",
@@ -61,8 +65,8 @@
       "commons-c4c741337ccf87c32ab1.js.map"
     ],
     "path---modules": [
-      "path---modules-0b67feeea14c0c284df7.js",
-      "path---modules-0b67feeea14c0c284df7.js.map"
+      "path---modules-e8457674b787bc1bc8ba.js",
+      "path---modules-e8457674b787bc1bc8ba.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -76,9 +80,13 @@
       "component---src-templates-usluga-template-js-3a88b2a1acfd81e8cd20.js",
       "component---src-templates-usluga-template-js-3a88b2a1acfd81e8cd20.js.map"
     ],
+    "path---modules-integrations-6": [
+      "path---modules-integrations-6-8917bbf55dc4999f6dfc.js",
+      "path---modules-integrations-6-8917bbf55dc4999f6dfc.js.map"
+    ],
     "app": [
-      "app-3b7f1e52b1d505db6f0e.js",
-      "app-3b7f1e52b1d505db6f0e.js.map"
+      "app-8c4a5b36f969529529a7.js",
+      "app-8c4a5b36f969529529a7.js.map"
     ],
     "path---modules-blagoustroistvo-2": [
       "path---modules-blagoustroistvo-2-2be1057ee414d3dc143e.js",
