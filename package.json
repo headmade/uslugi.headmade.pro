@@ -9,7 +9,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gatsby build && gh-pages -r 'https://github.com/headmade/uslugi.headmade.pro.git' -b master -d public"
+    "deploy": "gatsby build && gh-pages -r 'git@github.com:headmade/uslugi.headmade.pro.git' -b master -d public"
   },
   "devDependencies": {
     "prettier": "^1.12.0"
