@@ -13,8 +13,8 @@
       "path---modules-integrations-5-d85193d36c6e57ec3179.js.map"
     ],
     "path---uslugi": [
-      "path---uslugi-78529dd978ff97762767.js",
-      "path---uslugi-78529dd978ff97762767.js.map"
+      "path---uslugi-49fd5c060a174b5341d2.js",
+      "path---uslugi-49fd5c060a174b5341d2.js.map"
     ],
     "path---uslugi-gradoustroistvo-2": [
       "path---uslugi-gradoustroistvo-2-5ad603cb42a52dd273e1.js",
@@ -27,6 +27,10 @@
     "component---src-pages-index-js": [
       "component---src-pages-index-js-2b2550c4f525f6460779.js",
       "component---src-pages-index-js-2b2550c4f525f6460779.js.map"
+    ],
+    "path---modules-core-8": [
+      "path---modules-core-8-5d889e4c0d75bcffac23.js",
+      "path---modules-core-8-5d889e4c0d75bcffac23.js.map"
     ],
     "component---src-pages-uslugi-js": [
       "component---src-pages-uslugi-js-e05ed845409452565c4c.js",
@@ -57,8 +61,8 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---modules-core-7": [
-      "path---modules-core-7-234dea558a24d92ce905.js",
-      "path---modules-core-7-234dea558a24d92ce905.js.map"
+      "path---modules-core-7-bf4dc378e0b5c770bece.js",
+      "path---modules-core-7-bf4dc378e0b5c770bece.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -69,8 +73,8 @@
       "commons-56474fc4febd08cb5b27.js.map"
     ],
     "path---modules": [
-      "path---modules-78529dd978ff97762767.js",
-      "path---modules-78529dd978ff97762767.js.map"
+      "path---modules-49fd5c060a174b5341d2.js",
+      "path---modules-49fd5c060a174b5341d2.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -89,8 +93,8 @@
       "path---modules-integrations-6-17d539c810e469019bc7.js.map"
     ],
     "app": [
-      "app-8c890af53908709cf5a1.js",
-      "app-8c890af53908709cf5a1.js.map"
+      "app-a22076b1f7feabe7a855.js",
+      "app-a22076b1f7feabe7a855.js.map"
     ],
     "path---modules-blagoustroistvo-2": [
       "path---modules-blagoustroistvo-2-2be1057ee414d3dc143e.js",
