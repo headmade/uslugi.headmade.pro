@@ -1,0 +1,2 @@
+webpackJsonp([0xca16ce7c7601],{401:function(t,l){t.exports={data:{markdownRemark:{html:"<p>Позволяет выполнять согласования, необходимые в процессах МУ, с МУП Водоканал.</p>",frontmatter:{date:"July 01, 2021",dir_url:"/modules",dir_url_title:"Все модули",icon:"/images/usluga.svg",title:"Модуль ЛК Водоканала",itemList:null,captionTitle:null,captionText:null,lastItemCaption:null,lastItemText:null}}},pathContext:{}}}});
+//# sourceMappingURL=path---modules-integrations-9-497bcefee7d7f7b1fb52.js.map
