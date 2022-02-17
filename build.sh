@@ -1,4 +1,4 @@
-# 1. meed nvm
+# 1. need nvm
 # run as source build.sh
 
 rm -rf node_modules public
