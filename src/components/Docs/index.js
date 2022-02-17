@@ -3,7 +3,7 @@ import React from 'react'
 import pdf from './pdf-icon.svg'
 import installDoc from '../../docs/INSTALL.pdf'
 import readmeDoc from '../../docs/README.pdf'
-import supportDoc from '../../docs/SUPPORT.pdf'
+import manualDoc from '../../docs/MANUAL.pdf'
 import './Docs.sass'
 
 const Docs = () => (
@@ -16,22 +16,15 @@ const Docs = () => (
             <li className="docs__list-item">
               <div className="wrapper-list-item__img"><img src={pdf} alt="Document" /></div>
               <div className="wrapper-list-item__text">
-                <p>Руководство по установке</p>
+                <p>Руководство по установке и эксплуатации</p>
                 <a href={installDoc}>Скачать</a>
               </div>
             </li>
             <li className="docs__list-item">
               <div className="wrapper-list-item__img"><img src={pdf} alt="Document" /></div>
               <div className="wrapper-list-item__text">
-                <p>Описание системы</p>
-                <a href={readmeDoc}>Скачать</a>
-              </div>
-            </li>
-            <li className="docs__list-item">
-              <div className="wrapper-list-item__img"><img src={pdf} alt="Document" /></div>
-              <div className="wrapper-list-item__text">
-                <p>Руководство по эксплуатации</p>
-                <a href={supportDoc}>Скачать</a>
+                <p>Руководство пользователя</p>
+                <a href={manualDoc}>Скачать</a>
               </div>
             </li>
           </ul>

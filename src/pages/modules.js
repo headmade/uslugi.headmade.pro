@@ -3,9 +3,6 @@ import Link from "gatsby-link"
 
 const IndexPage = ({data}) => {
 
-
- console.log("sdas", data)
-
   return (
     <div className="content-wrapper">
       <div className="row">
@@ -14,7 +11,6 @@ const IndexPage = ({data}) => {
             <h2 className="base-caption base-caption--center base-caption--undefined">Модули</h2>
             <div className="popular-services">
               {data.allMarkdownRemark.edges.map((usluga, i)=>{
-                console.log(data.allMarkdownRemark.edges.length)
                 let frontmatterUsluga = usluga.node.frontmatter
 
                   return (
