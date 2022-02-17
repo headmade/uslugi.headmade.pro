@@ -8,19 +8,16 @@ const Help = () => (
     <div className="row">
       <div className="columns">
         <footer className="footer">
-          <h2 className="footer__caption">Остались вопросы?</h2>
+          <h2 className="footer__caption">О разработчике</h2>
+          <br/>
+          <p className="footer__text">ООО «ХЭДМЕЙД»</p>
           <p className="footer__text">
-            Напишите или позвоните нам в любое время
-            <br/>
-            и наши специалисты с удовольствием вам помогут!
+            <a href="mailto:info@headmade.pro?subject=ИС%20Услуги">info@headmade.pro</a>
           </p>
           <p className="footer__text">
-            Email: <a href="mailto:uslugi@headmade.pro?subject=ИС%20Услуги">uslugi@headmade.pro</a>
+            <a href="tel:+78432599923">+7(843)259-99-23</a>
           </p>
-          <p className="footer__text">
-            Тел: <a href="tel:+78432022147">+7(843)202-21-47</a>
-          </p>
-          <a href="mailto:uslugi@headmade.pro?subject=ИС%20Услуги" className="btn accent">Написать</a>
+          <p className="footer__text">г. Казань, ул.Карла Маркса, д.5, оф.114</p>
           <img className="footer__cat" src={cat} alt="cat" />
         </footer>
       </div>

@@ -36,13 +36,9 @@ class Content extends React.Component {
       <div>
         <Nav/>
         <Info/>
-        <How/>
         <CrossBrowser/>
-        <Docs/>
-        <Price/>
-        <Clients/>
-        <Uslugi/>
         <Modules/>
+        <Price/>
         <Help/>
       </div>
     )
