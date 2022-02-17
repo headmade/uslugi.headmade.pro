@@ -12,10 +12,6 @@
       "path---modules-integrations-5-d85193d36c6e57ec3179.js",
       "path---modules-integrations-5-d85193d36c6e57ec3179.js.map"
     ],
-    "path---uslugi": [
-      "path---uslugi-264fdb289784e7e6eaaf.js",
-      "path---uslugi-264fdb289784e7e6eaaf.js.map"
-    ],
     "path---uslugi-gradoustroistvo-2": [
       "path---uslugi-gradoustroistvo-2-5ad603cb42a52dd273e1.js",
       "path---uslugi-gradoustroistvo-2-5ad603cb42a52dd273e1.js.map"
@@ -25,8 +21,8 @@
       "path---modules-blagoustroistvo-1-1aa1cbf00dbedd54479a.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-2b2550c4f525f6460779.js",
-      "component---src-pages-index-js-2b2550c4f525f6460779.js.map"
+      "component---src-pages-index-js-b5e9c9a4f19c9a1b3d49.js",
+      "component---src-pages-index-js-b5e9c9a4f19c9a1b3d49.js.map"
     ],
     "path---modules-core-8": [
       "path---modules-core-8-c2dea19d768e1a6b6ee3.js",
@@ -36,13 +32,9 @@
       "path---modules-integrations-10-98e86d114f6c959642d7.js",
       "path---modules-integrations-10-98e86d114f6c959642d7.js.map"
     ],
-    "component---src-pages-uslugi-js": [
-      "component---src-pages-uslugi-js-e05ed845409452565c4c.js",
-      "component---src-pages-uslugi-js-e05ed845409452565c4c.js.map"
-    ],
     "component---src-pages-modules-js": [
-      "component---src-pages-modules-js-91342b1c37427550af4e.js",
-      "component---src-pages-modules-js-91342b1c37427550af4e.js.map"
+      "component---src-pages-modules-js-d92e6b74726e159a53b4.js",
+      "component---src-pages-modules-js-d92e6b74726e159a53b4.js.map"
     ],
     "path---": [
       "path----622d5056e12760aebb06.js",
@@ -61,8 +53,8 @@
       "path---modules-integrations-smev-4-4806092833f2f5dd1db3.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-bc1f6c05fa6cf5c4ea9f.js",
-      "component---src-layouts-index-js-bc1f6c05fa6cf5c4ea9f.js.map"
+      "component---src-layouts-index-js-b1e9414ac0b9b17c52c3.js",
+      "component---src-layouts-index-js-b1e9414ac0b9b17c52c3.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -81,8 +73,8 @@
       "commons-56474fc4febd08cb5b27.js.map"
     ],
     "path---modules": [
-      "path---modules-264fdb289784e7e6eaaf.js",
-      "path---modules-264fdb289784e7e6eaaf.js.map"
+      "path---modules-a5471eb8763ab119aa74.js",
+      "path---modules-a5471eb8763ab119aa74.js.map"
     ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
@@ -105,8 +97,8 @@
       "path---modules-integrations-6-17d539c810e469019bc7.js.map"
     ],
     "app": [
-      "app-1c4997bba6c278d8e0d6.js",
-      "app-1c4997bba6c278d8e0d6.js.map"
+      "app-f46b01621d8bbb38095b.js",
+      "app-f46b01621d8bbb38095b.js.map"
     ],
     "path---modules-blagoustroistvo-2": [
       "path---modules-blagoustroistvo-2-2be1057ee414d3dc143e.js",
