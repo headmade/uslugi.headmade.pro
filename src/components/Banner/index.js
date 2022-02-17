@@ -24,7 +24,7 @@ const Banner = ({location}) => {
           <h1 className="banner-text">
             {title_long}
           </h1>
-          <div className="other-lang"><a href="/en">eng</a><span className="seporator">/</span><a href="/">rus</a></div>
+          {/*<div className="other-lang"><a href="/en">eng</a><span className="seporator">/</span><a href="/">rus</a></div>*/}
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ import segment2 from './segment-item-2-full.svg'
 import segment3 from './segment-item-3-full.svg'
 import minkomsvaz from './logo-minkomsvaz.png'
 import './Info.sass'
+import Docs from "../Docs";
+import How from "../How";
 
 const Info = () => {
   return (
@@ -98,12 +100,12 @@ const Info = () => {
                 </ul>
               </div>
             </div>
+            <Docs/>
+            <How/>
+            <h1 className="info__caption">Цифровая экономика</h1>
             <div className="info__segment info__segment-2">
-              <div className="info__segment-wrapper-img">
-                <img src={segment2} alt="Цифровая экономика" />
-              </div>
+
               <div className="info__segment-text">
-                <h2 className="info-segment-title">Цифровая экономика</h2>
                 <ul className="info__segment-list">
                   <li className="info__segment-list-item">
                     <a href="#" className="info__segment-list-item-link info__segment-list-item-link-color2">
@@ -160,13 +162,18 @@ const Info = () => {
                   </li>
                 </ul>
               </div>
+              <div className="info__segment-wrapper-img">
+                <img src={segment2} alt="Цифровая экономика" />
+              </div>
             </div>
+            <h1 className="info__caption">Законодательная база</h1>
             <div className="info__segment info__segment-3">
               <div className="info__segment-wrapper-img">
                 <img src={segment3} alt="Законодательная база" />
               </div>
+
               <div className="info__segment-text">
-                <h2 className="info-segment-title">Законодательная база</h2>
+                {/*<h2 className="info-segment-title">Законодательная база</h2>*/}
                 <ul className="info__segment-list">
                   <li className="info__segment-list-item">
                     <a href="#" className="info__segment-list-item-link info__segment-list-item-link-color3">

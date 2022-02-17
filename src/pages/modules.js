@@ -2,6 +2,10 @@ import React from "react"
 import Link from "gatsby-link"
 
 const IndexPage = ({data}) => {
+
+
+ console.log("sdas", data)
+
   return (
     <div className="content-wrapper">
       <div className="row">
@@ -9,11 +13,12 @@ const IndexPage = ({data}) => {
           <div className="popular-services-wrapper">
             <h2 className="base-caption base-caption--center base-caption--undefined">Модули</h2>
             <div className="popular-services">
-              {data.allMarkdownRemark.edges.map((usluga)=>{
+              {data.allMarkdownRemark.edges.map((usluga, i)=>{
+                console.log(data.allMarkdownRemark.edges.length)
                 let frontmatterUsluga = usluga.node.frontmatter
-                if (frontmatterUsluga.type === "modules"){
+
                   return (
-                    <Link key={frontmatterUsluga.key} className="usluga-card" to={frontmatterUsluga.path} >
+                    <Link key={i} className="usluga-card" to={frontmatterUsluga.path} >
                       <div className="card-caption">
                         <div className="card-caption__img-wrapper">
                           <img src={frontmatterUsluga.icon} alt="icon" />
@@ -25,7 +30,6 @@ const IndexPage = ({data}) => {
                       </div>
                     </Link>
                   )
-                } else return null
               })}
             </div>
           </div>

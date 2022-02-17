@@ -4,7 +4,7 @@ import Link from "gatsby-link"
 import uslugaIcon from "../../../static/images/usluga.svg"
 
 const Modules = () => (
-  <div className="wrapper-modules">
+  <div id="modules" className="wrapper-modules">
     <div className="row">
       <div className="columns">
         <div className="popular-services-wrapper">
