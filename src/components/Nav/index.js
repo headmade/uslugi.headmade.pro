@@ -11,9 +11,10 @@ const Nav = ({isOpen, toggleOpen}) => {
           <div className="columns">
             <nav className="nav">
               <ul className="nav__list">
-                <li className="nav__list-item"><a href="#info">Что такое ИС "Услуги"?</a></li>
-                <li className="nav__list-item"><a href="#cross-browser">Где посмотреть?</a></li>
-                <li className="nav__list-item"><a href="#help">Остались вопросы?</a></li>
+                <li className="nav__list-item"><a href="#info">Описание</a></li>
+                <li className="nav__list-item"><a href="#modules">Модули</a></li>
+                <li className="nav__list-item"><a href="#price">Цены</a></li>
+                <li className="nav__list-item"><a href="#help">О разработчике</a></li>
               </ul>
             </nav>
           </div>
@@ -24,9 +25,10 @@ const Nav = ({isOpen, toggleOpen}) => {
           <div className="columns">
             <nav className="nav-sticky">
               <ul className={`nav__list ${isOpen? "active" : ""}`}>
-                <li className="nav__list-item"><a href="#info">Что такое ИС "Услуги"?</a></li>
-                <li className="nav__list-item"><a href="#cross-browser">Где посмотреть?</a></li>
-                <li className="nav__list-item"><a href="#help">Остались вопросы?</a></li>
+                <li className="nav__list-item"><a href="#info">Описание</a></li>
+                <li className="nav__list-item"><a href="#modules">Модули</a></li>
+                <li className="nav__list-item"><a href="#price">Цены</a></li>
+                <li className="nav__list-item"><a href="#help">О разработчике</a></li>
               </ul>
               <div className="hamburger-wrapper">
                 <button onClick={toggleOpen} className={`c-hamburger c-hamburger--htx ${isOpen? "active" : ""}`}><span>toggle men</span></button>

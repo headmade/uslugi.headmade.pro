@@ -35,8 +35,6 @@ const How = () => (
               <h3 className="how__list-item-text">Выдача результатов в электронном виде</h3>
             </li>
           </ul>
-          <a href="https://demo.uslugi.headmade.pro" className="btn accent">Демонстрационный сервер</a>
-          <p className="how__under-btn">Попробуйте систему на демонстрационном сервере прямо сейчас!</p>
         </section>
       </div>
     </div>

@@ -13,8 +13,6 @@ const CrossBrowser = () => (
             <img src={display} alt="display" />
           </div>
         </section>
-        <br/>
-        <a href="https://demo.uslugi.headmade.pro" className="btn accent">Демонстрационный сервер</a>
       </div>
     </div>
   </div>
